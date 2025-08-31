@@ -21,7 +21,7 @@ export default function PaymentSuccess() {
         await new Promise((resolve) => setTimeout(resolve, 3000)); // simulate delay
 
         try {
-          const res = await axios.post('https://gas-agency-server.onrender.com/api/bookings', savedForm, {
+           await axios.post('https://gas-agency-server.onrender.com/api/bookings', savedForm, {
             headers: { Authorization: `Bearer ${token}` },
           });
 
