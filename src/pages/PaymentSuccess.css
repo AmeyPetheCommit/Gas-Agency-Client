@@ -1,0 +1,29 @@
+.payment-success-wrapper {
+  text-align: center;
+  padding: 2rem;
+}
+
+.success-content h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #28a745;
+}
+
+.success-buttons {
+  margin-top: 1.5rem;
+}
+
+.success-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.success-buttons button:hover {
+  background-color: #0056b3;
+}

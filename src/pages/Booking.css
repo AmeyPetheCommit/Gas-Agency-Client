@@ -1,0 +1,125 @@
+.booking-wrapper {
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.booking-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+}
+
+.booking-image-container {
+  position: relative;
+  width: 300px;
+  z-index: 2;
+}
+
+.gas-character {
+  width: 100%;
+  height: auto;
+  margin-top: -40px;
+  transform: translateX(20px);
+}
+
+.booking-card {
+  position: relative;
+  z-index: 1;
+  background: white;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+
+.booking-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 27px;
+}
+
+.booking-header h2 {
+  margin: 0;
+}
+
+.booking-details p {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.book-action-btn {
+  position: relative;
+  overflow: hidden;
+  margin-top: 2rem;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: var(--success-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-action-btn span {
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.book-action-btn:hover span {
+  opacity: 0;
+}
+
+.truck-icon-wrapper {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: none;
+  z-index: 0;
+}
+
+.book-action-btn:hover .truck-icon-wrapper {
+  opacity: 1;
+  animation: truck-move 1.7s linear infinite;
+}
+truck-icon-before{
+  font-size: 1.8rem;
+  color: white;
+}
+
+.truck-icon {
+  font-size: 1.8rem;
+  color: white;
+}
+
+@keyframes truck-move {
+  0% {
+    left: -40px;
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+

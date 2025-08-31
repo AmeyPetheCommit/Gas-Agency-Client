@@ -1,0 +1,71 @@
+.history-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-table th, .history-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.history-table th {
+  background-color: #3498db;
+  color: #fff;
+}
+.history-table button {
+  padding: 6px 10px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.history-table button:hover {
+  background-color: #27ae60;
+}
+
+.status {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.shipped {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status.delivered {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.cancelled {
+  background-color: #f1c4c4;
+  color: #970000;
+}
+
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+}
+

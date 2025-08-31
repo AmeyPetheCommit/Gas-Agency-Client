@@ -1,0 +1,27 @@
+.site-footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,80 @@
+.appointment-wrapper {
+  max-width: 550px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 35px 45px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.appointment-wrapper h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 2rem;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.appointment-form label {
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dcdde1;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+}
+
+.appointment-form input:focus,
+.appointment-form textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+  outline: none;
+  background-color: #fff;
+}
+
+.appointment-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.appointment-form button {
+  padding: 14px;
+  background-color: #27ae60;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.appointment-form button:hover {
+  background-color: #219150;
+}
+
+@media (max-width: 600px) {
+  .appointment-wrapper {
+    padding: 25px 20px;
+    margin: 30px 10px;
+  }
+
+  .appointment-wrapper h2 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,55 @@
+.receipt-wrapper {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.receipt-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+.receipt-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.receipt-preview > div {
+  margin: 0.5rem 0;
+}
+
+.receipt-total {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: green;
+}
+
+.receipt-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.receipt-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background 0.2s ease;
+  font-size: 20px;
+}
+
+.receipt-actions button:hover {
+  background-color: #0056b3;
+}

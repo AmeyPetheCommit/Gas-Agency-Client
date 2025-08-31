@@ -1,0 +1,67 @@
+/* src/admin/styles/AdminNotices.css */
+
+.admin_notice {
+  background: #f9fafc;
+  margin-left: 270px;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin_notice h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.admin_notice input,
+.admin_notice textarea,
+.admin_notice select {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: #fff;
+}
+
+.admin_notice input:focus,
+.admin_notice textarea:focus,
+.admin_notice select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+}
+
+.admin_notice textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.admin_notice button {
+  width: 100%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.admin_notice button:hover {
+  background: linear-gradient(135deg, #2980b9, #1f6391);
+  transform: translateY(-2px);
+}
+
+.admin_notice button:active {
+  transform: translateY(0);
+}

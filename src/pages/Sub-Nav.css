@@ -1,0 +1,81 @@
+/* Navbar.css */
+:root {
+  --primary-color: #0066cc;
+  --background-color: #f5f8fd;
+  --text-color: #333;
+  --subtext-color: #666;
+  --panel-color: #ffffff;
+  --success-color: #28a745;
+}
+
+/* Navbar.css */
+
+.subnavbar {
+  background-color: var(--background-color);
+  color: #333;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: 30px;
+}
+
+.subnavbar-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
+}
+
+.subnavbar-links li {
+  position: relative;
+}
+
+.subnavbar-links a {
+  color: #666666;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.subnavbar-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.subnavbar-links a:hover::after {
+  width: 100%;
+}
+
+.subnavbar-links a:hover {
+  color: #333333;
+}
+
+.badge {
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 3px 7px;
+  position: absolute;
+  top: -8px;
+  right: -15px;
+}
+
+
