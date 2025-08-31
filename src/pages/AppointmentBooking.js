@@ -16,7 +16,7 @@ export default function AppointmentBooking() {
     e.preventDefault();
     const token = localStorage.getItem('token');
     try {
-      const res = await axios.post(
+      await axios.post(
         'https://gas-agency-server.onrender.com/api/appointments',
         { date, time, note },
         { headers: { Authorization: `Bearer ${token}` } }
@@ -74,3 +74,4 @@ export default function AppointmentBooking() {
     </div>
   );
 }
+
