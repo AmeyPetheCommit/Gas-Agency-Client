@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import './Auth.css';
 
 export default function Login() {
@@ -67,7 +68,7 @@ export default function Login() {
         </div>
 
         <button type="submit">Login</button>
-        <p>Don't have an account? <a href="/register">Register</a></p>
+        <p>Don't have an account? <Link to={"/register"}>create one </Link> </p>
       </form>
     </div>
   );
